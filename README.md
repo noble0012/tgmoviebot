@@ -49,7 +49,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy to Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/200920082007/tgmoviebot/tree/master">
+<a href="https://telegram.dog/XTZ_HerokuBot?start=MjAwOTIwMDgyMDA3L3RnbW92aWVib3QgbWFzdGVy">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
