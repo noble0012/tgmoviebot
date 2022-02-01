@@ -14,6 +14,7 @@
 - [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Spelling Check Feature
+- [x] Share TexT Feature And So Many Features
 
 
 ## Variables
