@@ -464,13 +464,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('𝑝𝑎𝑠𝑠𝑤𝑜𝑟𝑑 𝑔𝑒𝑛', callback_data='genpassword'),           
             InlineKeyboardButton('𝑈𝑅𝐿 𝑠𝒉𝑜𝑟𝑡𝑛𝑒𝑟', callback_data='shortner'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
+            InlineKeyboardButton ('Ping', callback_data='pings'),
             ],[
             InlineKeyboardButton('𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛', callback_data='info'),
             InlineKeyboardButton('𝑠𝒉𝑎𝑟𝑒 𝑡𝑒𝑥𝑡', callback_data='sharetext'),
             InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            ],[
-            InlineKeyboardButton ('Ping', callback_data='pings'),
+            ],[       
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='start'),
             
         ]]
@@ -534,17 +533,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.PINGS_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "abook":
-        buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.ABOOK_TXT,
-            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
