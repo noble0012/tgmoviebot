@@ -478,6 +478,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
+            InlineKeyboardButton('𝑎𝑑𝑑 𝑚𝑒 𝑡𝑜 𝑦𝑜𝑢𝑟 𝑐𝒉𝑎𝑡', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
             InlineKeyboardButton('📃status📃', callback_data='stats'),
             InlineKeyboardButton('👉source👈', callback_data='source')
             ],[
