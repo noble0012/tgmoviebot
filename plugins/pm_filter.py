@@ -469,7 +469,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛', callback_data='info'),
             InlineKeyboardButton('𝑠𝒉𝑎𝑟𝑒 𝑡𝑒𝑥𝑡', callback_data='sharetext'),
             InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            ],[       
+            ],[
+            InlineKeyboardButton("video", callback_data='video'      
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='start'),
             
         ]]
@@ -534,6 +535,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=Script.BUTTON_TXT,
             disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "video":
+        buttons = [[
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='song')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=Script.VIDEO_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
