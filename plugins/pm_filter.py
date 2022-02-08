@@ -445,24 +445,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑎𝑑𝑚𝑖𝑛𝑠', callback_data='admin'),
             InlineKeyboardButton('𝑐𝑜𝑛𝑛𝑒𝑐𝑡', callback_data='coct'),
             InlineKeyboardButton('𝑓𝑖𝑙𝑡𝑒𝑟𝑠', callback_data='auto_manual'),
-            InlineKeyboardButton('𝑔𝑡𝑟𝑎𝑛𝑠', callback_data='gtrans'),
             ],[
+            InlineKeyboardButton('𝑔𝑡𝑟𝑎𝑛𝑠', callback_data='gtrans'),
             InlineKeyboardButton('𝑚𝑒𝑚𝑒', callback_data='memes'),
             InlineKeyboardButton('𝑝𝑎𝑠𝑡𝑒', callback_data='paste'),
+            ],[
             InlineKeyboardButton('𝑝𝑖𝑛', callback_data='pin'),
             InlineKeyboardButton('𝑝𝑢𝑟𝑔𝑒', callback_data='purge'),
-            ],[
             InlineKeyboardButton('𝑚𝑢𝑠𝑖𝑐', callback_data='music'),
+            ],[
             InlineKeyboardButton('𝑧𝑜𝑚𝑏𝑖𝑒𝑠', callback_data='zombies'),
             InlineKeyboardButton('𝑐𝑜𝑟𝑜𝑛𝑎', callback_data='corona'),
-            InlineKeyboardButton('𝑠𝑡𝑖𝑐𝑘𝑒𝑟 𝑖𝑑', callback_data='stickerid')            
-            ],[            
+            InlineKeyboardButton('𝑠𝑡𝑖𝑐𝑘𝑒𝑟 𝑖𝑑', callback_data='stickerid')
+            ],[                        
             InlineKeyboardButton('𝑟𝑒𝑠𝑡𝑟𝑖𝑐𝑡𝑖𝑜𝑛𝑠', callback_data='restric'),
             InlineKeyboardButton('🔍search🔎', callback_data='search'),            
             InlineKeyboardButton('𝑡𝑒𝑙𝑒𝑔𝑟𝑎𝑝𝒉', callback_data='tgraph'),
-            InlineKeyboardButton('𝑝𝑎𝑠𝑠𝑤𝑜𝑟𝑑 𝑔𝑒𝑛', callback_data='genpassword'),
-            ],[           
+            ],[
+            InlineKeyboardButton('𝑝𝑎𝑠𝑠𝑤𝑜𝑟𝑑 𝑔𝑒𝑛', callback_data='genpassword'),           
             InlineKeyboardButton('𝑈𝑅𝐿 𝑠𝒉𝑜𝑟𝑡𝑛𝑒𝑟', callback_data='shortner'),
+            ],[
             InlineKeyboardButton('𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛', callback_data='info'),
             InlineKeyboardButton('𝑠𝒉𝑎𝑟𝑒 𝑡𝑒𝑥𝑡', callback_data='sharetext'),
             ],[
