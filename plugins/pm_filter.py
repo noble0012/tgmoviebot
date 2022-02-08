@@ -117,7 +117,7 @@ async def advantage_spoll_choker(bot, query):
     if not movies:
         return await query.answer(f"⚠️ Hey, {query.from_user.first_name}! 𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('🔎 Checking for Movie in My database... 🔎')
+    await query.answer('𝑊𝑖8 𝑎 𝑚𝑖𝑛𝑢𝑡𝑒 𝑐𝒉𝑒𝑐𝑘𝑖𝑛𝑔 𝑚𝑜𝑣𝑖𝑒 𝑖𝑛 𝑑𝑎𝑡𝑎𝑏𝑎𝑠𝑒...')
     files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
