@@ -803,6 +803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+
 async def auto_filter(client, msg, spoll=False):
     if not spoll:
         message = msg
