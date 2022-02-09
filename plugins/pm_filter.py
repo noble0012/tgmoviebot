@@ -519,7 +519,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑅𝑒𝑝𝑜𝑟𝑡', callback_data='report'),
             ],[
             InlineKeyboardButton('𝐴𝑢𝑑𝑖𝑜-𝐵𝑜𝑜𝑘', callback_data='abook'),
-            InlineKeyboardButton('𝐴𝑝𝑝𝑟𝑜𝑣𝑎𝑙', callback_data='approval'),
             InlineKeyboardButton('𝐿𝑜𝑐𝑘𝑠', callback_data='lock'),
             ],[      
             InlineKeyboardButton('𝐵𝑎𝑐𝑘', callback_data='help'),
@@ -620,17 +619,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.AUTO_MANUAL_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "approval":
-        buttons = [[
-            InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.APPROVAL_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
