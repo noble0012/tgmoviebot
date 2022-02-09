@@ -456,22 +456,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('𝑧𝑜𝑚𝑏𝑖𝑒𝑠', callback_data='zombies'),
             InlineKeyboardButton('𝑐𝑜𝑟𝑜𝑛𝑎', callback_data='corona'),
-            InlineKeyboardButton('𝑠𝑡𝑖𝑐𝑘𝑒𝑟 𝑖𝑑', callback_data='stickerid')
-            ],[                        
-            InlineKeyboardButton('𝑟𝑒𝑠𝑡𝑟𝑖𝑐𝑡𝑖𝑜𝑛𝑠', callback_data='restric'),
-            InlineKeyboardButton('🔍search🔎', callback_data='search'),            
-            InlineKeyboardButton('𝑡𝑒𝑙𝑒𝑔𝑟𝑎𝑝𝒉', callback_data='tgraph'),
+            InlineKeyboardButton('𝑠𝑡𝑖𝑐𝑘𝑒𝑟 𝑖𝑑', callback_data='stickerid'),
             ],[
-            InlineKeyboardButton('𝑝𝑎𝑠𝑠𝑤𝑜𝑟𝑑 𝑔𝑒𝑛', callback_data='genpassword'),           
-            InlineKeyboardButton('𝑈𝑅𝐿 𝑠𝒉𝑜𝑟𝑡𝑛𝑒𝑟', callback_data='shortner'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
-            ],[
-            InlineKeyboardButton('𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛', callback_data='info'),
-            InlineKeyboardButton('𝑠𝒉𝑎𝑟𝑒 𝑡𝑒𝑥𝑡', callback_data='sharetext'),
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            ],[
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            ],[      
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='start'),
             InlineKeyboardButton('𝑆𝑡𝑎𝑡𝑢𝑠', callback_data='stats'),
             InlineKeyboardButton('𝐶𝑙𝑜𝑠𝑒 ✗', callback_data='close_data'),
@@ -521,6 +507,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "newdata":
         buttons = [[
+            InlineKeyboardButton('𝑟𝑒𝑠𝑡𝑟𝑖𝑐𝑡𝑖𝑜𝑛𝑠', callback_data='restric'),
+            InlineKeyboardButton('🔍search🔎', callback_data='search'),            
+            InlineKeyboardButton('𝑡𝑒𝑙𝑒𝑔𝑟𝑎𝑝𝒉', callback_data='tgraph'),
+            ],[
+            InlineKeyboardButton('𝑝𝑎𝑠𝑠𝑤𝑜𝑟𝑑 𝑔𝑒𝑛', callback_data='genpassword'),           
+            InlineKeyboardButton('𝑈𝑅𝐿 𝑠𝒉𝑜𝑟𝑡𝑛𝑒𝑟', callback_data='shortner'),
+            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
+            ],[
+            InlineKeyboardButton('𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛', callback_data='info'),
+            InlineKeyboardButton('𝑠𝒉𝑎𝑟𝑒 𝑡𝑒𝑥𝑡', callback_data='sharetext'),
+            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
+            ],[
+            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
+            ],[      
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
