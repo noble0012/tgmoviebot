@@ -101,7 +101,7 @@ Locking urls will auto-delete all messages with urls, locking stickers will dele
 Locking bots will stop non-admins from adding bots to the chat.
 
 Example:
-/lock media: this locks all the media messages in the chat.
+/lock media: this locks all the media messages in the chat."""
 
     BUTTON_TXT = """Help: <b>Buttons</b>
 
