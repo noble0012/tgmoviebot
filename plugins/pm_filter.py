@@ -470,7 +470,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑠𝒉𝑎𝑟𝑒 𝑡𝑒𝑥𝑡', callback_data='sharetext'),
             InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
             ],[
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),      
+            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
+            ],[      
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='start'),
             InlineKeyboardButton('𝑆𝑡𝑎𝑡𝑢𝑠', callback_data='stats'),
             InlineKeyboardButton('𝐶𝑙𝑜𝑠𝑒 ✗' callback_data='close_data'),
