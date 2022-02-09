@@ -519,7 +519,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑅𝑒𝑝𝑜𝑟𝑡', callback_data='report'),
             ],[
             InlineKeyboardButton('𝐴𝑢𝑑𝑖𝑜-𝐵𝑜𝑜𝑘', callback_data='abook'),
-            InlineKeyboardButton('𝐿𝑜𝑐𝑘𝑠', callback_data='lock'),
             ],[      
             InlineKeyboardButton('𝐵𝑎𝑐𝑘', callback_data='help'),
             InlineKeyboardButton('𝐶𝑙𝑜𝑠𝑒 ✗', callback_data='close_data'),
@@ -538,17 +537,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.MANUALFILTER_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "lock":
-        buttons = [[
-            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='newdata')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.LOCK_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
