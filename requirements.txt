@@ -24,3 +24,4 @@ ffmpeg-python
 requests
 ytthumb
 PyPDF2
+pypdf2
