@@ -440,6 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.answer('Welcome To Tiger Shroff Bot')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('𝑎𝑑𝑚𝑖𝑛𝑠', callback_data='admin'),
@@ -470,6 +471,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.answer('Welcome To Help Module')
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('𝑎𝑑𝑑 𝑚𝑒 𝑡𝑜 𝑦𝑜𝑢𝑟 𝑐𝒉𝑎𝑡', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -493,6 +495,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.answer('Welcome To About Module')
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='about')
@@ -529,6 +532,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.answer('Welcome To My Second Help Module')
     elif query.data == "manualfilter":
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='auto_manual'),
@@ -541,6 +545,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.answer('Welcome To Manuel Filter')
     elif query.data == "abook":
         buttons = [[
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='newdata')
@@ -552,6 +557,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.answer('Welcome To Audio-Book')
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='manualfilter')
