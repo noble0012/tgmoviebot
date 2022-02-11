@@ -459,6 +459,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑐𝑜𝑟𝑜𝑛𝑎', callback_data='corona'),
             InlineKeyboardButton('𝑠𝑡𝑖𝑐𝑘𝑒𝑟 𝑖𝑑', callback_data='stickerid'),
             ],[
+            InlineKeyboardButton('Alive', callback_data='alive'),
+            ],[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='start'),
             InlineKeyboardButton('𝑆𝑡𝑎𝑡𝑢𝑠', callback_data='stats'),
             InlineKeyboardButton('𝑁𝑒𝑥𝑡', callback_data='newdata'),
@@ -545,7 +547,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('Welcome To Manuel Filter')
+        await query.answer('Welcome To Audio-Book')
     elif query.data == "abook":
         buttons = [[
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='newdata')
@@ -557,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('Welcome To Audio-Book')
+        await query.answer('Welcome')
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('« 𝐵𝑎𝑐𝑘', callback_data='manualfilter')
@@ -576,6 +578,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=Script.REPORT_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "alive":
+        buttons = [[
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=Script.ALIVE_TXT,
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
