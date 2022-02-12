@@ -25,3 +25,4 @@ requests
 ytthumb
 PyPDF2
 pypdf2
+alita
