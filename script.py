@@ -48,6 +48,19 @@ a bot to create a link to share text in the telegram.
 • IMDb should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
+    GREET_TXT ="""Here is the help for the <b>Greetings</b> module:
+
+Welcome new members to your groups or say Goodbye after they leave!
+
+Admin Commands:
+× /setwelcome <reply/text>: Sets welcome text for group.
+× /welcome <yes/no/on/off>: Enables or Disables welcome setting for group.
+× /resetwelcome: Resets the welcome message to default.
+× /setgoodbye <reply/text>: Sets goodbye text for group.
+× /goodbye <yes/no/on/off>: Enables or Disables goodbye setting for group.
+× /resetgoodbye: Resets the goodbye message to default.
+× /cleanservice <yes/no/on/off>: Delete all service messages such as 'x joined the group' notification.
+× /cleanwelcome <yes/no/on/off>: Delete the old welcome message, whenever a new member joins."""
     ALIVE_TXT ="""<b>ALIVE MODULE</b>
 • /alive - check me alive or dead🤧
 Just for a rasam😂"""
