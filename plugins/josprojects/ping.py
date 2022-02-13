@@ -5,7 +5,7 @@ import time
 import random
 from pyrogram import Client, filters
 from info import COMMAND_HAND_LER
-from plugins.helper_functions.cust_p_filters import f_onw_fliter
+from plugins.josprojects.helper_func.cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
 ALIVE = "വെറുതെ Alive അടിച്ചു വെറുപ്പിക്കാതട ഞൻ ഇവട ജീവനോടെ ഒക്കെ തന്നെ ണ്ട് MANH ചത്തൊന്നും പോയിട്ടില്ല🥲\n\n ⍟𝐌𝐲 𝐜𝐫𝐞𝐚𝐭𝐨𝐫: @lallu_tg\n\n⍟𝐌𝐲 𝐬𝐮𝐩𝐩𝐨𝐫𝐭: @Annaben_support\n\n⍟𝐌𝐲 𝐮𝐩𝐝𝐚𝐭𝐞𝐬: @team_annaben\n\n⍟𝐌𝐲 𝐬𝐮𝐩𝐩𝐨𝐫𝐭𝐞𝐫: @PANDITHAN_SIR"
