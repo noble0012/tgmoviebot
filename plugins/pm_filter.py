@@ -535,6 +535,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+        await query.message.edit_text(
+            text="▢▢▢"
+        )
+        await query.message.edit_text(
+            text="▣▢▢"
+        )
+        await query.message.edit_text(
+            text="▣▣▢"
+        )
+        await query.message.edit_text(
+            text="▣▣▣"
+        )
         await query.answer('Welcome To My Second Help Module')
     elif query.data == "manualfilter":
         buttons = [[
