@@ -529,12 +529,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝐵𝑎𝑐𝑘', callback_data='help'),
             InlineKeyboardButton('𝐶𝑙𝑜𝑠𝑒 ✗', callback_data='close_data'),
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.NEWDATA_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
         await query.message.edit_text(
             text="▢▢▢"
         )
@@ -546,6 +540,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text="▣▣▣"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=Script.NEWDATA_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
         )
         await query.answer('Welcome To My Second Help Module')
     elif query.data == "manualfilter":
