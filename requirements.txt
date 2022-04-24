@@ -26,3 +26,4 @@ ytthumb
 PyPDF2
 pypdf2
 alita
+telethon
