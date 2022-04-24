@@ -1,4 +1,5 @@
 from telethon import events
+from pyrogram import Client,filters
 
 import asyncio
 
