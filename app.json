@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://github.com/200920082007/tgmoviebot",
-    "repository": "https://github.com/200920082007/tgmoviebot",
+    "repository": "https://github.com/noble0012/tgmoviebot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot Token. Get from @BotFather.",
